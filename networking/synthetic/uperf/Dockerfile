@@ -31,8 +31,9 @@ RUN rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 	pbench-agent \
 	pbench-uperf; \
     yum clean all; \
+    mkdir /var/lib/pbench-agent; \
     source /etc/profile.d/pbench-agent.sh
-    
+
 VOLUME [ "/sys/fs/cgroup" ]
 
 CMD ["/usr/sbin/init"]

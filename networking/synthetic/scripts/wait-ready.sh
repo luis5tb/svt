@@ -14,7 +14,8 @@ while $(sleep 5); do
     fi
 
     if [[ "${result}" == 1 ]]; then
+        sleep 400
 	exit 0
     fi
-    
+
 done

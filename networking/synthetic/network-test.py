@@ -195,7 +195,7 @@ def set_playbook(test_type):
     elif test_type == 'nodeIP':
         return 'node-ip-test-setup.yaml'
     else:
-        return 'svc-ip-test-setup.yaml'
+        return 'svc-ip-tcp-test-setup.yaml'
 
 
 def set_pbench_label(test_type, nodes):
